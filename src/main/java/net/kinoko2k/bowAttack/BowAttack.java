@@ -64,7 +64,9 @@ public class BowAttack extends JavaPlugin {
 
     }
 
-    public MySQL getMySQL() { return mysql; }
+    public MySQL getMySQL() {
+        return mysql;
+    }
 
     public String getDiscordWebhookUrl() {
         return discordWebhookUrl;
