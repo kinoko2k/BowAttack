@@ -1,0 +1,34 @@
+name: BowAttack
+version: ${project.version}
+main: net.kinoko2k.bowAttack.BowAttack
+api-version: '1.21'
+load: STARTUP
+authors: [ Kinoko_2K ]
+description: BowAttack
+website: https://bento.me/kinoko1216
+prefix: BowAttack
+depend:
+  - DecentHolograms
+commands:
+  start:
+    description: BowAttackを開始します。
+    usage: "/start <player> <mode>"
+    tab-completer: net.kinoko2k.bowAttack.BowAttack.commands.StartCommand
+    permission: bowattack.start
+  ranking:
+    description: BowAttackのランキングを表示します。
+    usage: "/ranking"
+    permission: bowattack.ranking
+  updateranking:
+    description: ホログラムのランキングを更新
+    usage: /updateranking <wins/totalgame>
+permissions:
+  bowattack.start:
+    description: BowAttackを開始する権限
+    default: true
+  bowattack.ranking:
+    description: BowAttackのランキングを表示する権限
+    default: op
+  bowattack.ranking.update:
+    description: Hologramのランキングを更新する権限
+    default: op
