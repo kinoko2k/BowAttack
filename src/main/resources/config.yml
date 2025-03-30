@@ -1,0 +1,9 @@
+mysql:
+  host: "localhost"
+  port: 3306
+  database: "BowAttack"
+  user: "bowattacker"
+  password: "bowbow"
+
+Discord:
+  webhook_url: ""
